@@ -136,16 +136,20 @@ nav ul li a {
 .menu-items h3 {
   margin: 0;
 }
-.menu-item {
+.menu-data {
   margin-bottom: 30px;
 }
 
-.menu-item ul {
+.menu-data ul {
   list-style: none;
   padding: 0;
 }
-
-.menu-item ul li {
+.menu-data img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.menu-data ul li {
   margin-bottom: 5px;
 }
 
