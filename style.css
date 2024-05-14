@@ -8,17 +8,28 @@ body {
   margin: 0 auto;
 }
 
+
 header {
-  background-color: black;
+  background-color: #000000e8;
   position: sticky;
   top: 0;
   padding: 20px 0;
 }
-#navbar{
+#navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
+#navbar a {
+  color: #ffd43b;
+}
+.fa-a {
+  border: 1px white solid;
+  font-size: x-large;
+}
+.logo a {
+  text-decoration: none;
+}
 header img {
   height: 50px;
   vertical-align: middle;
@@ -39,9 +50,19 @@ nav ul li a {
   text-decoration: none;
   color: #333;
 }
-
+.fa-bars{
+  color: #fff;
+  margin-left: 70px;
+  display: none !important;
+}
+.sectionOne{
+  background-image: url("assets/home background.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+}
 .menu {
   padding: 50px 0;
+ 
 }
 
 .menu-item {
