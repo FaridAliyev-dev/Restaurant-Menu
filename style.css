@@ -9,7 +9,9 @@ body {
 }
 
 header {
-  background-color: #f8f9fa;
+  background-color: black;
+  position: sticky;
+  top: 0;
   padding: 20px 0;
 }
 
