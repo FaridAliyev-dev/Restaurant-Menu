@@ -250,3 +250,65 @@ footer {
 .footer-social img {
   height: 30px;
 }
+.aboutContainer {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutImages {
+  width: fit-content;
+}
+.aboutImage img {
+  width: 214px;
+  height: 214px;
+}
+.firstAboutImage {
+  margin-top: 35px;
+}
+.lastAboutImage {
+  margin-bottom: 35px;
+}
+.aboutTextRight {
+  width: 50%;
+}
+.aboutTextRight h1 {
+  font-size: xxx-large;
+}
+.aboutTextRight p {
+  font-size: larger;
+  font-weight: 600;
+}
+.experienceAndChefsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+}
+.experienceAndChefsWrapper h1 {
+  color: gold;
+  text-decoration: overline;
+}
+.experienceWrapper,
+.chefsWrapper {
+  width: fit-content;
+}
+.aboutBtn {
+  width: 217px;
+  height: 55px;
+  border-radius: 19px;
+  border: 0px;
+  background-color: gold;
+  margin-left: 160px;
+  margin-top: 40px;
+  cursor: pointer;
+  box-shadow: 26px 20px 15px -3px rgba(0,0,0,0.1);
+}
+.aboutBtn a {
+  text-decoration: unset;
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+}
