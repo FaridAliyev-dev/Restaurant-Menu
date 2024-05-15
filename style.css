@@ -180,6 +180,10 @@ span {
   display: flex;
   justify-content: space-around;
 }
+.itemsUl p{
+  width: 90%;
+  text-align: center;
+}
 .appItem,
 .mainItem,
 .dessItem,
