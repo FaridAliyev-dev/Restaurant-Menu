@@ -29,7 +29,7 @@ header {
   align-items: center;
 }
 #navbar a {
-  color: #ffd43b;
+  color: gold;
 }
 .fa-a {
   border: 1px white solid;
@@ -37,6 +37,7 @@ header {
 }
 .logo a {
   text-decoration: none;
+  color: gold;
 }
 header img {
   height: 50px;
@@ -107,7 +108,7 @@ nav ul li a {
 
 .menu {
   padding: 50px 0;
-  background-color: black;
+  background-color: #1b1b1b;
   color: beige;
 }
 .menu h2 {
@@ -139,6 +140,18 @@ nav ul li a {
 .menu-data {
   margin-bottom: 30px;
 }
+.menu-data h3 {
+  text-align: center;
+  margin: 60px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: gold;
+}
+span {
+  color: gold;
+  text-decoration: underline;
+  border: 1px white dotted;
+}
 
 .menu-data ul {
   list-style: none;
@@ -146,8 +159,22 @@ nav ul li a {
 }
 .menu-data img {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
+}
+.itemsUl {
+  display: flex;
+  justify-content: space-around;
+}
+.appItem,
+.mainItem,
+.dessItem,
+.bevItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .fa-robot,
 .robot {
@@ -165,6 +192,7 @@ nav ul li a {
   top: 497px;
   right: 78px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .menu-data ul li {
   margin-bottom: 5px;
@@ -216,6 +244,7 @@ footer {
 
 .footer-social a {
   margin-right: 10px;
+  color: gold;
 }
 
 .footer-social img {
