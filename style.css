@@ -64,6 +64,20 @@ nav ul li a {
   margin-left: 70px;
   display: none !important;
 }
+.pizzaImg{
+  position: absolute;
+    z-index: 12;
+    width: 300px;
+    right: 90px;
+    top: 200px;
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+}
 .sectionOne {
   position: relative;
   height: 540px;
