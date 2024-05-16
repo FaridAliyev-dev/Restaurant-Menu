@@ -20,29 +20,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   console.log("DOM content loaded");
-
-//   // Select all category buttons
-//   var categoryButtons = document.querySelectorAll(".category-button");
-
-//   // Add click event listener to each button
-//   categoryButtons.forEach(function (button) {
-//     button.addEventListener("click", function () {
-//       // Get the category from the button's data attribute
-//       var category = button.dataset.category;
-
-//       // Hide all menu categories
-//       var categories = document.querySelectorAll(".menu-category");
-//       categories.forEach(function (cat) {
-//         cat.classList.remove("active");
-//       });
-
-//       // Show the selected menu category
-//       var selectedCategory = document.querySelector(
-//         '[data-category="' + category + '"]'
-//       );
-//       selectedCategory.classList.add("active");
-//     });
-//   });
-// });
