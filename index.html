@@ -35,8 +35,10 @@
       </div>
     </header>
     <section>
-      <img src="assets/pizza.png" class="pizzaImg" />
       <div class="sectionOne">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/Restaur.mp4" type="video/mp4" />
+        </video>
         <h1>Enjoy Our Delicious Meal</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -50,24 +52,24 @@
       <div class="container">
         <h2>Our Menu</h2>
         <div class="menu-items">
-          <button>
+          <button class="category-button" data-category="appetizers">
             <h3>Appetizers</h3>
             <i class="fa-solid fa-bowl-food"></i>
           </button>
-          <button>
+          <button class="category-button" data-category="mainCourse">
             <h3>Main Courses</h3>
             <i class="fa-solid fa-utensils"></i>
           </button>
-          <button>
+          <button class="category-button" data-category="dessert">
             <h3>Desserts</h3>
             <i class="fa-solid fa-cheese"></i>
           </button>
-          <button>
+          <button class="category-button" data-category="beverage">
             <h3>Beverages</h3>
             <i class="fa-solid fa-martini-glass-citrus"></i>
           </button>
         </div>
-        <div class="menu-data">
+        <div class="menu-category" data-category="appetizers">
           <h3>Appetizers</h3>
 
           <ul class="itemsUl">
@@ -97,7 +99,7 @@
             </div>
           </ul>
         </div>
-        <div class="menu-data">
+        <div class="menu-category" data-category="mainCourse">
           <h3>Main Courses</h3>
 
           <ul class="itemsUl">
@@ -127,7 +129,7 @@
             </div>
           </ul>
         </div>
-        <div class="menu-data">
+        <div class="menu-category" data-category="dessert">
           <h3>Desserts</h3>
           <ul class="itemsUl">
             <div class="dessItem">
@@ -158,7 +160,7 @@
             </div>
           </ul>
         </div>
-        <div class="menu-data">
+        <div class="menu-category" data-category="beverage">
           <h3>Beverages</h3>
           <ul class="itemsUl">
             <div class="bevItem">
