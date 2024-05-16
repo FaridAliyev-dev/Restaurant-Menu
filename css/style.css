@@ -95,7 +95,7 @@ nav ul {
   color: white;
   position: relative;
   height: 540px;
-  background: url("assets/Restaur.mp4") repeat center center fixed;
+  background: url("../assets/Restaur.mp4") repeat center center fixed;
   background-size: cover;
   background-position-y: bottom;
   height: 540px;
