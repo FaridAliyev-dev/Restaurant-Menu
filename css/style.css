@@ -20,10 +20,13 @@ body {
 
 header {
   background-color: #000000e8;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   padding: 20px 0;
   z-index: 50;
+    position: fixed; 
+    /* left: 0; */
+    width: 100%;
 }
 #rightSide {
   width: 35%;
@@ -94,11 +97,10 @@ nav ul {
 .sectionOne {
   color: white;
   position: relative;
-  height: 540px;
   background: url("../assets/Restaur.mp4") repeat center center fixed;
   background-size: cover;
   background-position-y: bottom;
-  height: 540px;
+  height: 620px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -139,6 +141,7 @@ nav ul {
   text-align: center;
   font-size: 40px;
   text-shadow: 4px 2px #a757a7;
+  margin-top: 70px;
 }
 .menu button {
   background-color: #f4bbff;
@@ -165,7 +168,7 @@ nav ul {
 }
 .menu-category h3 {
   text-align: center;
-  margin: 60px;
+  margin: 30px;
   font-size: 30px;
   text-decoration: underline;
   text-decoration-color: gold;
@@ -220,9 +223,6 @@ span {
   right: 78px;
   border-radius: 50%;
   cursor: pointer;
-}
-.menu-category ul li {
-  margin-bottom: 5px;
 }
 
 footer {
