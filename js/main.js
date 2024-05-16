@@ -20,3 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Scroll target in the navbar
+
+document.addEventListener("DOMContentLoaded", function () {
+  debugger;
+  var hashLinks = document.querySelectorAll('a[href^="#"]');
+  console.log(hashLinks);
+  hashLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log(e);
+      var targetId = link.getAttribute("href").substring(1);
+      console.log(targetId);
+      document.getElementById(targetId).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+});
