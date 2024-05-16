@@ -1,4 +1,5 @@
 var popup = document.getElementById("popup");
+const scrollToTopButton = document.getElementById("scrollToTopButton");
 
 // Show the selected menu category and hide other categories
 
@@ -76,3 +77,21 @@ function displayPopup(ingredients) {
 }
 // close popup function
 const closePopup = () => (popup.style.display = "none");
+
+window.addEventListener("scroll", () => {
+  // show the button
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    scrollToTopButton.style.display = "block";
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
