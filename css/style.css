@@ -220,7 +220,7 @@ span {
   font-size: 25px;
   cursor: pointer;
   z-index: 1000;
-  display: none; 
+  display: none;
 }
 
 .scroll-to-top-btn:hover {
@@ -288,6 +288,7 @@ footer {
 }
 .aboutImages {
   width: fit-content;
+  margin-top: 50px;
 }
 .aboutImage img {
   width: 214px;
