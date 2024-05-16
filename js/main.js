@@ -1,17 +1,19 @@
+var popup = document.getElementById("popup");
+
 // Show the selected menu category and hide other categories
 
 document.addEventListener("DOMContentLoaded", function () {
-  var categoryBtns = document.querySelectorAll(".category-button");
+  let categoryBtns = document.querySelectorAll(".category-button");
   categoryBtns.forEach(function (button) {
     button.addEventListener("click", function () {
-      var category = button.dataset.category;
+      let category = button.dataset.category;
       console.log(category);
-      var categories = document.querySelectorAll(".menu-category");
+      let categories = document.querySelectorAll(".menu-category");
       console.log(categories);
       categories.forEach(function (category) {
         category.classList.remove("active");
       });
-      var selectedCategory = document.querySelector(
+      let selectedCategory = document.querySelector(
         '.menu-category[data-category="' + category + '"]'
       );
       console.log(selectedCategory);
@@ -38,3 +40,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Show popup everytime you press on the item
+
+document.addEventListener("DOMContentLoaded", function () {
+  var CategoryItems = document.querySelectorAll(
+    ".appItem, .mainItem, .dessItem, .bevItem"
+  );
+  CategoryItems.forEach(function (item) {
+    item.addEventListener("click", () => {
+      const ingredients = item.getAttribute("data-ingredients").split(",");
+      displayPopup(ingredients);
+    });
+    popup.addEventListener("click", () => {
+      closePopup();
+    });
+    document
+      .getElementById("close")
+      .addEventListener("click", () => closePopup());
+  });
+});
+
+function displayPopup(ingredients) {
+  let ingredientLists = document.getElementById("ingredients-list");
+  ingredientLists.innerHTML = "";
+
+  ingredients.forEach((ingredient) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = ingredient.trim();
+    ingredientLists.appendChild(listItem);
+  });
+
+  // Display popup function
+  popup.style.display = "flex";
+}
+// close popup function
+const closePopup = () => (popup.style.display = "none");

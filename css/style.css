@@ -202,6 +202,7 @@ span {
 .bevItem {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   row-gap: 10px;
   justify-content: center;
   align-items: center;
@@ -358,8 +359,8 @@ footer {
 .popup-content {
   background-color: #fff;
   padding: 20px;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 40%;
   border-radius: 10px;
 }
 
@@ -368,8 +369,8 @@ footer {
   cursor: pointer;
   color: black;
   text-decoration: unset;
-  top: 30%;
-  right: 29%;
+  top: 35%;
+  right: 37%;
   width: 30px;
   background-color: gold;
   text-align: center;
