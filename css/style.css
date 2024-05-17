@@ -462,4 +462,5 @@ form {
   font-size: x-large;
   width: 100%;
   height: 48px;
+  cursor: pointer;
 }

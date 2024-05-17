@@ -95,3 +95,14 @@ window.addEventListener("scroll", () => {
     scrollToTopButton.style.display = "none";
   }
 });
+
+// Function to clear the inputs in contact section
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+  });
+});
