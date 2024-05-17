@@ -155,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
   searchIcon.addEventListener("click", function () {
     filterMenuItems();
     menuSearchInput.value = "";
-
   });
 
   function filterMenuItems() {
@@ -171,4 +170,23 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+});
+
+function navigateToMenu() {
+  window.location.href = "index.html#menu";
+}
+
+document.querySelectorAll(".menuNav").forEach((nav) => {
+  nav.addEventListener("click", function () {
+    navigateToMenu();
+  });
+});
+
+function navigateToContact() {
+  window.location.href = "index.html#contactUs";
+}
+document.querySelectorAll(".contactUsNav").forEach((nav) => {
+  nav.addEventListener("click", function () {
+    navigateToContact();
+  });
 });
