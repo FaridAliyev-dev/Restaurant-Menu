@@ -28,8 +28,11 @@ header {
   /* left: 0; */
   width: 100%;
 }
+#navbar .logo {
+  width: 30%;
+}
 #rightSide {
-  width: 35%;
+  width: 50%;
 }
 #navbar {
   display: flex;
@@ -63,7 +66,7 @@ header img {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #menuToggle {
@@ -99,7 +102,8 @@ header img {
   background: url("../assets/Restaur.mp4") repeat center center fixed;
   background-size: cover;
   background-position-y: bottom;
-  height: 620px;
+  height: 100%;
+  margin-top: 66px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -112,15 +116,16 @@ header img {
   font-size: 70px;
   font-weight: 900;
   margin-top: 0;
-  margin-inline-start: 45px;
+  margin: 45px;
   z-index: 3;
 }
 
 .sectionOne p {
   font-size: 22px;
   z-index: 3;
-  width: 600px;
-  margin-inline-start: 45px;
+  width: 50%;
+  margin: 50px;
+  /* margin-inline-start: 45px; */
 }
 .menu-category {
   display: none;
@@ -291,7 +296,7 @@ footer {
   height: 30px;
 }
 .aboutContainer {
-  width: 90%;
+  width: 80%;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
@@ -313,6 +318,11 @@ footer {
 }
 .aboutTextRight {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  row-gap: 21px;
 }
 .aboutTextRight h1 {
   font-size: xxx-large;
@@ -337,13 +347,12 @@ footer {
   width: fit-content;
 }
 .aboutBtn {
-  width: 217px;
+  width: fit-content;
   height: 55px;
   border-radius: 19px;
+  margin-top: 20px;
   border: 0px;
   background-color: gold;
-  margin-left: 160px;
-  margin-top: 40px;
   cursor: pointer;
   box-shadow: 26px 20px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -425,16 +434,19 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: 325px;
+  height: 100%;
   margin-top: 20px;
 }
+.mapLeftSide {
+  width: 50%;
+}
 iframe {
-  height: 325px;
+  height: 100%;
   border: 0;
-  width: 400px;
+  width: 100%;
 }
 .formRightSide {
-  height: 325px;
+  height: 100%;
   width: 47%;
 }
 .nameAndEmailWrapper {
@@ -449,6 +461,7 @@ form {
 }
 .form-flex {
   height: inherit;
+  row-gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -483,6 +496,6 @@ form {
   background-color: gold;
   font-size: x-large;
   width: 100%;
-  height: 48px;
+  height: fit-content;
   cursor: pointer;
 }

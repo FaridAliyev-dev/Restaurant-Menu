@@ -198,4 +198,14 @@
     padding: unset;
     font-size: xxx-large;
   }
+  /* popup  */
+  .popup-content{
+    width: 75%;
+    height: 40%;
+  }
+  .close{
+    top: 33%;
+    right: 20%;
+    border-radius: 17px;
+  }
 }
