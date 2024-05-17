@@ -67,7 +67,7 @@ nav ul {
   justify-content: space-around;
 }
 
-.fa-solid.fa-bars {
+#menuToggle{
   color: #fff;
   margin-left: 70px;
   display: none;
