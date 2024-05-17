@@ -1,6 +1,8 @@
 @media (max-width: 375px) {
-  body {
-    width: 375px;
+  /* header */
+
+  #rightSide {
+    width: unset;
   }
   #navLinks {
     display: none;
@@ -13,6 +15,9 @@
     right: 0;
     align-items: center;
   }
+
+  /* menu toggle  and overlay */
+
   #menuToggle {
     display: block;
   }
@@ -25,15 +30,14 @@
     left: 0;
     display: none;
   }
-  .sectionOne {
-    height: unset;
-  }
+
+  /* section one  */
+
   .sectionOne h1 {
     width: unset;
     margin-top: 70px;
     font-size: xxx-large;
     padding: 1px;
-    margin-bottom: 0;
   }
   .sectionOne p {
     width: 100%;
@@ -59,7 +63,10 @@
     font-size: 13px;
   }
   .menu-items {
-    column-gap: 10px;
+    column-gap: 13px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
   }
   .menu h2 {
     margin: 12px 0;
@@ -95,7 +102,7 @@
     width: unset;
     height: unset;
     flex-direction: column;
-    margin: unset;
+    margin: 13px 0;
   }
   .contact-info {
     row-gap: unset;
@@ -199,12 +206,15 @@
     font-size: xxx-large;
   }
   /* popup  */
-  .popup-content{
+  .popup-content {
     width: 75%;
-    height: 40%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .close{
-    top: 33%;
+  .close {
+    top: 35%;
     right: 20%;
     border-radius: 17px;
   }
