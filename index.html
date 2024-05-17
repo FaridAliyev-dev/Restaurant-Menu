@@ -239,69 +239,77 @@
               </p>
             </div>
           </div>
-          <div>
-            <iframe
-              class="position-relative rounded w-100 h-100"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.670762592577!2d31.49789431532078!3d30.015066425289443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840a29c1157db%3A0xdce7571900a19982!2sFifth%20Settlement%2C%20New%20Cairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1620156604565!5m2!1sen!2seg"
-              frameborder="0"
-              style="min-height: 500px; border: 0; width: 100%"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
-          <div class="contact-form">
-            <form>
-              <div class="form-grid">
-                <div class="form-item">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder=" "
-                    />
-                    <label for="name">Your Name</label>
+          <div class="contactWrapper">
+            <div class="mapLeftSide">
+              <iframe
+                class="position-relative rounded w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.670762592577!2d31.49789431532078!3d30.015066425289443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840a29c1157db%3A0xdce7571900a19982!2sFifth%20Settlement%2C%20New%20Cairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1620156604565!5m2!1sen!2seg"
+                frameborder="0"
+                style="height: 325px; border: 0; width: 400px"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+
+            <div class="formRightSide">
+              <form>
+                <div class="form-flex">
+                  <div class="nameAndEmailWrapper">
+                    <div class="form-item">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder=" "
+                        />
+                        <label for="name">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder=" "
+                        />
+                        <label for="email">Your Email</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-item">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder=" "
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder=" "
+                        id="message"
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <button class="contactBtn" type="submit">
+                      Send Message
+                    </button>
                   </div>
                 </div>
-                <div class="form-item">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder=" "
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
-                </div>
-                <div class="form-item">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder=" "
-                    />
-                    <label for="subject">Subject</label>
-                  </div>
-                </div>
-                <div class="form-item">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      placeholder=" "
-                      id="message"
-                      style="height: 150px"
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-                <div class="form-item">
-                  <button class="contactBtn" type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>

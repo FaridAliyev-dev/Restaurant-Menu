@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Scroll target in the navbar
 
 document.addEventListener("DOMContentLoaded", function () {
-  debugger;
+  //   debugger;
   var hashLinks = document.querySelectorAll('a[href^="#"]');
   console.log(hashLinks);
   hashLinks.forEach(function (link) {
