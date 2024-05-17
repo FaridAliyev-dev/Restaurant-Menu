@@ -1,4 +1,7 @@
 @media (max-width: 375px) {
+  body {
+    width: 375px;
+  }
   #navLinks {
     display: none;
     flex-direction: column;
@@ -30,11 +33,14 @@
     margin-top: 70px;
     font-size: xxx-large;
     padding: 1px;
+    margin-bottom: 0;
   }
   .sectionOne p {
     width: 100%;
     margin-inline-start: unset;
     padding: 15px;
+    margin-top: 0;
+    font-size: larger;
   }
   .bg-video {
     width: 100%;
@@ -111,6 +117,8 @@
   .contactBtn {
     height: unset;
   }
+  /* footer  */
+
   .footer-content {
     flex-direction: column;
   }
@@ -131,5 +139,63 @@
   }
   .footer-social a {
     font-size: x-large;
+  }
+  /* about page  */
+  .aboutBtn {
+    margin: unset;
+    width: fit-content;
+    font-size: unset;
+    height: fit-content;
+    border-radius: 5px;
+  }
+  .aboutBtn a {
+    font-size: unset;
+  }
+  .aboutTextRight h1 {
+    font-size: xx-large;
+  }
+  .aboutContainer {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .aboutImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 90px;
+  }
+  .aboutImage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .firstAboutImage,
+  .thirdAboutImage {
+    margin-top: 63px;
+  }
+  .lastAboutImage {
+    margin-bottom: unset;
+    margin-top: -50px;
+  }
+  .aboutTextRight {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .aboutTextRight h1 {
+    box-shadow: 10px 25px 8px -3px rgba(0, 0, 0, 0.1);
+    padding: 0 34px;
+  }
+  .aboutTextRight p {
+    font-size: medium;
+  }
+  .experienceAndChefsWrapper {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .insideWrapper h1 {
+    padding: unset;
+    font-size: xxx-large;
   }
 }

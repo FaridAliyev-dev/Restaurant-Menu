@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.style.display = "none";
       menuOverLay.style.display = "none";
       // calling the function of closing toggle
-      overlayClick();
+      // overlayClick();
     } else {
       navLinks.style.display = "flex";
       menuOverLay.style.display = "flex";
@@ -128,10 +128,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Fuction close menu toggle
-function overlayClick() {
+// Fuction close menu toggle (when you press the overlay it will close the menu)
+document.addEventListener("DOMContentLoaded", () => {
   menuOverLay.addEventListener("click", () => {
     navLinks.style.display = "none";
     menuOverLay.style.display = "none";
   });
-}
+});
+// Another way to apply close menu and overlay
+// function overlayClick() {
+//   menuOverLay.addEventListener("click", () => {
+//     navLinks.style.display = "none";
+//     menuOverLay.style.display = "none";
+//   });
+// }
