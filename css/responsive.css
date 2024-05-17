@@ -1,7 +1,73 @@
 @media (max-width: 375px) {
-  .scrollToTopButton {
-    top: 600px;
-    right: 450px;
-    /* bottom: 110px; */
+  .sectionOne {
+    height: unset;
+  }
+  .sectionOne h1 {
+    width: unset;
+    margin-top: 70px;
+    font-size: xxx-large;
+    padding: 1px;
+  }
+  .sectionOne p {
+    width: 100%;
+    margin-inline-start: unset;
+    padding: 15px;
+  }
+  .bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .scroll-to-top-btn {
+    top: 800px;
+    right: 39px;
+  }
+  #rightSide ul {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .menu .container {
+    width: 95%;
+  }
+  .category-button h3 {
+    font-size: 13px;
+  }
+  .menu-items {
+    column-gap: 10px;
+  }
+  .menu h2 {
+    margin: 12px 0;
+  }
+  .itemsUl {
+    flex-direction: column;
+    margin: unset;
+  }
+  .appItem,
+  .mainItem,
+  .dessItem,
+  .bevItem {
+    row-gap: unset;
+    margin-top: 10px;
+    border: 1px white solid;
+    padding: 10px;
+  }
+  .menu-category h3 {
+    margin: unset;
+    padding: 10px;
+  }
+  .menu-category img {
+    width: 115px;
+    height: 115px;
+  }
+  .contactWrapper {
+    width: unset;
+    height: unset;
+    flex-direction: column;
+  }
+  iframe {
+    width: unset;
+    height: 265px;
   }
 }
