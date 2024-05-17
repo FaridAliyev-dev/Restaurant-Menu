@@ -127,6 +127,7 @@ header img {
   margin: 50px;
   /* margin-inline-start: 45px; */
 }
+
 .menu-category {
   display: none;
 }
@@ -134,6 +135,28 @@ header img {
 .menu-category.active {
   display: block;
 }
+
+/* search */
+.search-container {
+  position: relative;
+}
+
+#menuSearch {
+  padding-right: 30px;
+  width: 90px;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: purple;
+  pointer-events: none;
+}
+
+/* menu */
 
 .menu {
   padding: 1px 0;
