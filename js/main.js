@@ -119,11 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       navLinks.style.display = "none";
       menuOverLay.style.display = "none";
+     
       // calling the function of closing toggle
       // overlayClick();
     } else {
       navLinks.style.display = "flex";
       menuOverLay.style.display = "flex";
+
     }
   });
 });
@@ -172,6 +174,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Function to route to menu
+
 function navigateToMenu() {
   window.location.href = "index.html#menu";
 }
@@ -181,6 +185,8 @@ document.querySelectorAll(".menuNav").forEach((nav) => {
     navigateToMenu();
   });
 });
+
+// Function to route to contact us
 
 function navigateToContact() {
   window.location.href = "index.html#contactUs";

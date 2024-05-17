@@ -66,6 +66,7 @@ header img {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -145,6 +146,8 @@ header img {
   padding-right: 30px;
   width: 90px;
   border: none;
+  height: 39px;
+  border-radius: 12px 20px;
 }
 
 .search-icon {
@@ -182,10 +185,13 @@ header img {
 }
 .menu-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 35px;
   text-align: center;
+  row-gap: 16px;
+
 }
 .menu-items h3 {
   margin: 0;
@@ -251,7 +257,7 @@ span {
   height: 40px;
   font-size: 25px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 3;
   display: none;
 }
 
@@ -319,33 +325,39 @@ footer {
   height: 30px;
 }
 .aboutContainer {
+  margin: 94px auto;
   width: 80%;
   display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+.aboutWrapper{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  column-gap: 25px;
 }
 .aboutImages {
   width: fit-content;
-  margin-top: 50px;
 }
 .aboutImage img {
   width: 214px;
   height: 214px;
 }
-.firstAboutImage {
+/* .firstAboutImage {
   margin-top: 35px;
-}
+} */
 .lastAboutImage {
   margin-bottom: 35px;
 }
 .aboutTextRight {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   row-gap: 21px;
+  justify-content: center;
 }
 .aboutTextRight h1 {
   font-size: xxx-large;
