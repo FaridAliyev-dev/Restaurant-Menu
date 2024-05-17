@@ -1,5 +1,7 @@
 var popup = document.getElementById("popup");
 const scrollToTopButton = document.getElementById("scrollToTopButton");
+const menuOverLay = document.getElementById("menuOverlay");
+const navLinks = document.getElementById("navLinks");
 
 // Show the selected menu category and hide other categories
 
@@ -106,3 +108,30 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("message").value = "";
   });
 });
+
+// Toggle menu icon and show the list of menu
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menuToggle");
+  menuToggle.addEventListener("click", () => {
+    if (
+      navLinks.style.display === "flex" &&
+      menuOverLay.style.display === "flex"
+    ) {
+      navLinks.style.display = "none";
+      menuOverLay.style.display = "none";
+      // calling the function of closing toggle
+      overlayClick();
+    } else {
+      navLinks.style.display = "flex";
+      menuOverLay.style.display = "flex";
+    }
+  });
+});
+
+// Fuction close menu toggle
+function overlayClick() {
+  menuOverLay.addEventListener("click", () => {
+    navLinks.style.display = "none";
+    menuOverLay.style.display = "none";
+  });
+}

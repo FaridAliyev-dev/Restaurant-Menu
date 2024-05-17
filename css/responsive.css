@@ -1,15 +1,26 @@
 @media (max-width: 375px) {
-  #rightSide ul {
+  #navLinks {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 36%;
+    height: 36%;
     background: #444;
-    position: absolute;
-    top: 60px;
-    left: 0;
+    position: fixed;
+    top: 66px;
+    right: 0;
+    align-items: center;
   }
   #menuToggle {
     display: block;
+  }
+  #menuOverlay {
+    background-color: #000000e0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    display: none;
   }
   .sectionOne {
     height: unset;

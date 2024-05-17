@@ -58,8 +58,7 @@ header img {
   height: 50px;
   vertical-align: middle;
 }
-
-nav ul {
+#navLinks {
   list-style: none;
   margin: 0;
   padding: 0;
