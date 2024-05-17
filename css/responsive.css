@@ -1,0 +1,6 @@
+@media (max-width: 375px) {
+  .scrollToButton {
+    top: 600px;
+    right: 450px;
+  }
+}
