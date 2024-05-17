@@ -337,7 +337,8 @@ footer {
   cursor: pointer;
   box-shadow: 26px 20px 15px -3px rgba(0, 0, 0, 0.1);
 }
-.aboutBtn a {
+.aboutBtn a,
+.contactBtn a {
   text-decoration: unset;
   color: black;
   font-size: x-large;
