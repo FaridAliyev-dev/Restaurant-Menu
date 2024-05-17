@@ -186,9 +186,12 @@
     text-align: center;
     margin-bottom: 15px;
   }
+  #welcomeHeader {
+    width: 100%;
+    font-size: x-large;
+  }
   .aboutTextRight h1 {
     box-shadow: 10px 25px 8px -3px rgba(0, 0, 0, 0.1);
-    padding: 0 34px;
   }
   .aboutTextRight p {
     font-size: medium;
