@@ -260,6 +260,9 @@ footer {
 .footer-links ul li {
   margin-bottom: 10px;
 }
+.footer-links ul li a:hover {
+  color: gold;
+}
 
 .footer-links ul li a {
   text-decoration: none;
