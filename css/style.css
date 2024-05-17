@@ -248,7 +248,10 @@ footer {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
+.footer-logo a {
+  font-size: large;
+  font-weight: 700;
+}
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -274,6 +277,7 @@ footer {
 .footer-social a {
   margin-right: 10px;
   color: gold;
+  cursor: pointer;
 }
 
 .footer-social img {
@@ -411,7 +415,7 @@ footer {
   height: 325px;
   margin-top: 20px;
 }
-iframe{
+iframe {
   height: 325px;
   border: 0;
   width: 400px;

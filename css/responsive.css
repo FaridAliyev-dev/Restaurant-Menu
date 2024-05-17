@@ -84,10 +84,31 @@
     width: unset;
     margin-top: 17px;
   }
-  .form-flex{
+  .form-flex {
     justify-content: space-around;
   }
-  .contactBtn{
+  .contactBtn {
     height: unset;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-links {
+    width: 100%;
+  }
+  .footer-links ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-contact {
+    width: 100%;
+  }
+  .footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+  .footer-social a{
+    font-size: x-large;
   }
 }
