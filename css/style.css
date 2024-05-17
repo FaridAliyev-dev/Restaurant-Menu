@@ -148,12 +148,12 @@ header img {
 }
 
 .search-icon {
+  cursor: pointer;
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: purple;
-  pointer-events: none;
 }
 
 /* menu */

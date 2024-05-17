@@ -142,3 +142,33 @@ document.addEventListener("DOMContentLoaded", () => {
 //     menuOverLay.style.display = "none";
 //   });
 // }
+
+// Filter function
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuSearchInput = document.getElementById("menuSearch");
+  const menuItems = document.querySelectorAll(".itemsUl > div");
+  const searchIcon = document.querySelector(".search-icon");
+
+  // Add event listeners for input and icon click
+  menuSearchInput.addEventListener("input", filterMenuItems);
+  searchIcon.addEventListener("click", function () {
+    filterMenuItems();
+    menuSearchInput.value = "";
+
+  });
+
+  function filterMenuItems() {
+    const searchTerm = menuSearchInput.value.toLowerCase();
+
+    menuItems.forEach((item) => {
+      const itemName = item.querySelector("li").textContent.toLowerCase();
+
+      if (itemName.includes(searchTerm)) {
+        item.style.display = "flex";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+});
