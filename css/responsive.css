@@ -19,8 +19,8 @@
     object-fit: fill;
   }
   .scroll-to-top-btn {
-    top: 800px;
-    right: 39px;
+    top: 475px;
+    right: 33px;
   }
   #rightSide ul {
     display: none;
@@ -61,13 +61,33 @@
     width: 115px;
     height: 115px;
   }
+  .contactUs {
+    padding: unset;
+  }
   .contactWrapper {
     width: unset;
     height: unset;
     flex-direction: column;
+    margin: unset;
+  }
+  .contact-info {
+    row-gap: unset;
+  }
+  .contact-info h3 {
+    margin: unset;
   }
   iframe {
     width: unset;
-    height: 265px;
+    height: 220px;
+  }
+  .formRightSide {
+    width: unset;
+    margin-top: 17px;
+  }
+  .form-flex{
+    justify-content: space-around;
+  }
+  .contactBtn{
+    height: unset;
   }
 }
