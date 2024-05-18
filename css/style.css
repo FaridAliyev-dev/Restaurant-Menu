@@ -421,8 +421,8 @@ footer {
 .popup-content {
   background-color: #fff;
   padding: 20px;
-  width: 70%;
-  height: 30%;
+  width: 35%;
+  height: 35%;
   border-radius: 10px;
 }
 
@@ -432,7 +432,7 @@ footer {
   color: black;
   text-decoration: unset;
   top: 37%;
-  right: 20%;
+  right: 34%;
   width: 30px;
   background-color: gold;
   text-align: center;
