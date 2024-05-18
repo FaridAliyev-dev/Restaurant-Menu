@@ -103,7 +103,7 @@
     flex-direction: column;
     margin: 13px 0;
   }
-  .mapLeftSide{
+  .mapLeftSide {
     width: 100%;
   }
   .contact-info {
@@ -190,14 +190,16 @@
     margin-bottom: 15px;
   }
   #welcomeHeader {
-    width: 75%;
-    font-size: x-large;
+    width: 100%;
+    font-size: unset;
   }
   .aboutTextRight h1 {
     box-shadow: 10px 25px 8px -3px rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
   .aboutTextRight p {
-    font-size: medium;
+    font-size: unset;
+    font-weight: unset;
   }
   .experienceAndChefsWrapper {
     width: 100%;

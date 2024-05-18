@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@700&display=swap");
 * {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 html,
@@ -191,7 +192,6 @@ header img {
   column-gap: 35px;
   text-align: center;
   row-gap: 16px;
-
 }
 .menu-items h3 {
   margin: 0;
@@ -331,10 +331,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.aboutWrapper{
+.aboutWrapper {
   width: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   column-gap: 25px;
 }
 .aboutImages {
@@ -360,7 +360,7 @@ footer {
   justify-content: center;
 }
 .aboutTextRight h1 {
-  font-size: xxx-large;
+  width: 70%;
 }
 .aboutTextRight p {
   font-size: larger;
@@ -379,7 +379,7 @@ footer {
 }
 .experienceWrapper,
 .chefsWrapper {
-  width: fit-content;
+  width: 50%;
 }
 .aboutBtn {
   width: fit-content;
