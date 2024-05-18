@@ -100,13 +100,16 @@ window.addEventListener("scroll", () => {
 
 // Function to clear the inputs in contact section
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("contactForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
-  });
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
+    });
+  }
 });
 
 // Toggle menu icon and show the list of menu
@@ -119,13 +122,12 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       navLinks.style.display = "none";
       menuOverLay.style.display = "none";
-     
+
       // calling the function of closing toggle
       // overlayClick();
     } else {
       navLinks.style.display = "flex";
       menuOverLay.style.display = "flex";
-
     }
   });
 });
@@ -153,11 +155,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchIcon = document.querySelector(".search-icon");
 
   // Add event listeners for input and icon click
-  menuSearchInput.addEventListener("input", filterMenuItems);
-  searchIcon.addEventListener("click", function () {
-    filterMenuItems();
-    menuSearchInput.value = "";
-  });
+  if (menuSearchInput && menuItems && searchIcon) {
+    menuSearchInput.addEventListener("input", filterMenuItems);
+    searchIcon.addEventListener("click", function () {
+      filterMenuItems();
+      menuSearchInput.value = "";
+    });
+  }
 
   function filterMenuItems() {
     const searchTerm = menuSearchInput.value.toLowerCase();
