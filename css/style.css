@@ -335,6 +335,8 @@ footer {
   display: flex;
   justify-content: center;
   column-gap: 25px;
+  box-shadow: 26px 20px 15px -3px rgba(0, 0, 0, 0.1);
+
 }
 .aboutImages {
   width: fit-content;
@@ -343,9 +345,7 @@ footer {
   width: 214px;
   height: 214px;
 }
-/* .firstAboutImage {
-  margin-top: 35px;
-} */
+
 .lastAboutImage {
   margin-bottom: 35px;
 }
@@ -359,10 +359,11 @@ footer {
   justify-content: center;
 }
 .aboutTextRight h1 {
-  width: 70%;
+  text-align: center;
+  width: 100%;
+  box-shadow: 3px 4px 7px 6px rgba(0, 0, 0, 0.1);
 }
 .aboutTextRight p {
-  font-size: larger;
   font-weight: 600;
 }
 .experienceAndChefsWrapper {
@@ -378,7 +379,7 @@ footer {
 }
 .experienceWrapper,
 .chefsWrapper {
-  width: 50%;
+  width: fit-content;
 }
 .aboutBtn {
   width: fit-content;
@@ -393,7 +394,7 @@ footer {
 .aboutBtn a {
   text-decoration: unset;
   color: black;
-  font-size: x-large;
+  font-size: larger;
   font-weight: 600;
 }
 .aboutBtn:hover {

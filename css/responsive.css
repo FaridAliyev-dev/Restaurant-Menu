@@ -173,7 +173,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 30px;
-    width: 80%;
+    width: 25%;
   }
   .aboutImage img {
     width: 100px;
@@ -190,6 +190,7 @@
     margin-bottom: 15px;
   }
   #welcomeHeader {
+    display: grid;
     width: 100%;
     font-size: unset;
   }
